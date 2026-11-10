@@ -1,4 +1,4 @@
-# Caixa Eletrônico em C
+# ATM em C
 
 Simulador de caixa eletrônico (ATM) em linguagem C, executado no terminal.
 
@@ -13,10 +13,12 @@ Simulador de caixa eletrônico (ATM) em linguagem C, executado no terminal.
 
 ## Como compilar e executar
 1. Clone o repositório:
-   `git clone https://github.com/Nickolashbezerra/caixa-eletronico-c.git`
-2. Compile:
+   `git clone https://github.com/Nickolashbezerra/atm-em-c.git`
+2. Entre na pasta:
+   `cd atm-em-c`
+3. Compile:
    `gcc main.c -o atm`
-3. Execute:
+4. Execute:
    `./atm` (Linux/Mac) ou `atm.exe` (Windows)
 
 ## Autor
