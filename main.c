@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #define SALDO_INICIAL 1500
+#define LIMITE_SAQUE 1000
 
 void consultar_saldo(int saldo) {
     printf("\nSaldo atual: R$ %d\n", saldo);
@@ -42,9 +43,12 @@ int sacar(int saldo) {
         printf("Erro: o valor do saque deve ser maior que zero.\n");
     } else if (saque % 5 != 0) {
         printf("Erro: o valor deve ser multiplo de 5.\n");
+     } else if (saque > LIMITE_SAQUE) {
+        printf("Erro: o limite por saque e de R$ %d.\n", LIMITE_SAQUE);
     } else if (saque > saldo) {
         printf("Erro: saldo insuficiente.\n");
     } else {
+        
         restante = saque;
         printf("Notas entregues:\n");
 
